@@ -1,2 +1,156 @@
-# Flex-Wrap-Card-design
-is my best practices in flex-wrap card design
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Wrap Card design</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .main-proparity{
+            text-align: center;
+            font-size: 2rem;
+            color: rgb(255, 0, 221);
+            margin: 2rem;
+        }
+        .product-card{
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transfrom 0.3s, box-shadow 0.3s, ease;
+        }
+        .product-card:hover{
+            box-shadow: 5px 7px 4px 3px rgba(120, 0, 251, 0.1);
+        }
+        .product-image img{
+           width: 100%;
+           height: 250px;
+           object-fit: cover;
+        }
+        .product-details{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .product-title{
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 0.9rem;
+        }
+        .product-description{
+           font-size: 1rem;
+           color: #666;
+           margin-bottom: 0.7rem;
+           flex-grow: 1;
+        }
+        .product-price{
+            margin-bottom: 0.7rem;
+            font-size: 1.2rem;
+        }
+        span{
+            color: rgb(255, 51, 0);
+        }
+        .buy-btn{
+            border: none;
+            padding: .5rem;
+            color: tomato;
+            background: linear-gradient(to left, #333, #0814b1, #ff0077);
+            border-radius: 0.4rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .buy-btn:hover{
+            background: radial-gradient(circle, #000000, #2600ff, #ff0077);
+            color: white;
+        }
+        .product-container{
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="main-proparity">This is my Card design And my name is Omar</h1>
+        <section class="product-container">
+            <!--product 1-->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="photo/pexels-morriyn-33336581.jpg" alt="ti shart is veri butifull">
+                    <div class="product-details">
+                        <h2 class="product-title">Product Title</h2>
+                        <p class="product-description">amet consectetur adipisicing elit. Molestias sequi rerum mollitia possimus adipisci in placeat debitis recusandae dolor similique.</p>
+                        <p class="product-price">$<span>150.55</span></p>
+                        <button class="buy-btn">Bye New</button>
+                    </div>
+                </div>
+            </div>
+            <!--product 2-->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="photo/pexels-ivan-aguilar-2154351719-33365139.jpg" alt="this is icon">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Product Title</h3>
+                    <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nesciunt cumque dolorem reprehenderit obcaecati neque.</p>
+                    <p class="product-price">$ <span>100.99</span> </p>
+                    <button class="buy-btn">Bye New</button>
+                </div>
+            </div>
+             <!--product 3-->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="photo/pexels-tr-ng-nguy-n-thanh-2150411289-33409075.jpg" alt="this is icon">
+                </div>
+                <div class="product-details">
+                    <h4 class="product-title">Product Title</h4>
+                    <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nesciunt cumque dolorem reprehenderit obcaecati neque.</p>
+                    <p class="product-price">$ <span>100.99</span> </p>
+                    <button class="buy-btn">Bye New</button>
+                </div>
+            </div>
+             <!--product 4-->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="photo/pexels-anhleephoto-33452987.jpg" alt="this is icon">
+                </div>
+                <div class="product-details">
+                    <h5 class="product-title">Product Title</h5>
+                    <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nesciunt cumque dolorem reprehenderit obcaecati neque.</p>
+                    <p class="product-price">$ <span>100.99</span> </p>
+                    <button class="buy-btn">Bye New</button>
+                </div>
+            </div>
+            <!--product 5-->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="photo/pexels-nguy-n-ti-n-th-nh-2150376175-33300804.jpg" alt="this is icon">
+                </div>
+                <div class="product-details">
+                    <h6 class="product-title">Product Title</h6>
+                    <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nesciunt cumque dolorem reprehenderit obcaecati neque.</p>
+                    <p class="product-price">$ <span>100.99</span> </p>
+                    <button class="buy-btn">Bye New</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
